@@ -37,13 +37,12 @@ class App extends Component {
             />
             <VictoryAxis
               dependentAxis
-              label="Active Nodes"
               domain={[0, 250]}
               tickValues={[0, 50, 100, 150, 200, 250]}
               style={{
                 axis: { stroke: "transparent" },
                 axisLabel: { fontSize: 12, padding: 36 },
-                tickLabels: { fontSize: 12 },
+                tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
             />
@@ -54,19 +53,20 @@ class App extends Component {
                 parse("14-Oct-14"),
                 parse("18-Nov-16"),
                 parse("18-Jun-17"),
-                parse("18-May-18")
+                parse("18-May-18"),
+                parse("15-Sep-18")
               ]}
               tickFormat={x => {
-                const date = format(parse(x), "MMM YYYY");
-                if (date == "Nov 2016") return "SN1";
-                if (date == "Jun 2017") return "SN2";
-                if (date == "May 2018") return "NYCHA";
+                const date = format(parse(x), "MMM 'YY");
+                if (date == "Nov '16") return "SN1";
+                if (date == "Jun '17") return "SN2";
+                if (date == "May '18") return "NYCHA";
                 return date;
               }}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 14, padding: 36 },
-                tickLabels: { fontSize: 12 },
+                axisLabel: { fontSize: 8, padding: 36 },
+                tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
             />
@@ -98,8 +98,8 @@ class App extends Component {
               tickValues={[0, 500, 1000, 1500, 2000, 2500]}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 12, padding: 36 },
-                tickLabels: { fontSize: 12 },
+                axisLabel: { fontSize: 8, padding: 36 },
+                tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
             />
@@ -110,21 +110,22 @@ class App extends Component {
                 parse("1-Oct-17"),
                 parse("1-Jan-18"),
                 parse("1-Apr-18"),
-                parse("1-Jul-18")
+                parse("1-Jul-18"),
+                parse("15-Sep-18")
                 // parse("18-Jun-17"),
                 // parse("18-May-18")
               ]}
               tickFormat={x => {
-                const date = format(parse(x), "MMM YYYY");
-                if (date == "Nov 2016") return "SN1";
-                if (date == "Jun 2017") return "SN2";
-                if (date == "May 2018") return "NYCHA";
+                const date = format(parse(x), "MMM 'YY");
+                if (date == "Nov '16") return "SN1";
+                if (date == "Jun '17") return "SN2";
+                if (date == "May '18") return "NYCHA";
                 return date;
               }}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 14, padding: 36 },
-                tickLabels: { fontSize: 12 },
+                axisLabel: { fontSize: 8, padding: 36 },
+                tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
             />
