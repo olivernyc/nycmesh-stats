@@ -24,8 +24,8 @@ class App extends Component {
     }));
 
     return (
-      <div className="App">
-        <div className="mw7 center">
+      <div className="App pb5 flex-l flex-wrap">
+        <div className="w-50-l w-100 center">
           <VictoryChart>
             <VictoryLine
               style={{
@@ -41,13 +41,14 @@ class App extends Component {
               tickValues={[0, 50, 100, 150, 200, 250]}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 12, padding: 36 },
+                axisLabel: { fontSize: 10, padding: 36 },
                 tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
             />
             <VictoryAxis
               crossAxis
+              label="Active Nodes"
               domain={[parse("14-Oct-14"), parse("16-Sep-18")]}
               tickValues={[
                 parse("14-Oct-14"),
@@ -65,7 +66,7 @@ class App extends Component {
               }}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 8, padding: 36 },
+                axisLabel: { fontSize: 10, padding: 36 },
                 tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
@@ -73,8 +74,8 @@ class App extends Component {
           </VictoryChart>
         </div>
 
-        <div className="mw7 center">
-          <VictoryChart minDomain={{ x: parse("18-Apr-17") }}>
+        <div className="w-50-l w-100 center">
+          <VictoryChart minDomain={{ x: parse("20-Apr-17") }}>
             <VictoryLine
               style={{
                 data: { stroke: "#ccc" },
@@ -93,19 +94,19 @@ class App extends Component {
             />
             <VictoryAxis
               dependentAxis
-              label="Active / Potential Nodes"
               domain={[0, 2500]}
               tickValues={[0, 500, 1000, 1500, 2000, 2500]}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 8, padding: 36 },
                 tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
             />
             <VictoryAxis
               crossAxis
+              label="Active / Potential Nodes"
               tickValues={[
+                parse("20-Apr-17"),
                 parse("1-Jul-17"),
                 parse("1-Oct-17"),
                 parse("1-Jan-18"),
@@ -124,7 +125,7 @@ class App extends Component {
               }}
               style={{
                 axis: { stroke: "transparent" },
-                axisLabel: { fontSize: 8, padding: 36 },
+                axisLabel: { fontSize: 10, padding: 36 },
                 tickLabels: { fontSize: 8 },
                 grid: { stroke: "rgba(0,0,0,0.125)" }
               }}
