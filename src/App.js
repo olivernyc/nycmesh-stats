@@ -32,13 +32,14 @@ class App extends Component {
                 data: { stroke: "red" },
                 parent: { border: "1px solid #ccc" }
               }}
+              interpolation="natural"
               data={activeData}
             />
             <VictoryAxis
               dependentAxis
               label="Active Nodes"
-              domain={[0, 200]}
-              tickValues={[0, 50, 100, 150, 200]}
+              domain={[0, 250]}
+              tickValues={[0, 50, 100, 150, 200, 250]}
               style={{
                 axis: { stroke: "transparent" },
                 axisLabel: { fontSize: 12, padding: 36 },
@@ -80,6 +81,7 @@ class App extends Component {
                 parent: { border: "1px solid #ccc" }
               }}
               data={potentialData}
+              interpolation="natural"
             />
             <VictoryLine
               style={{
@@ -87,12 +89,13 @@ class App extends Component {
                 parent: { border: "1px solid #ccc" }
               }}
               data={activeData}
+              interpolation="natural"
             />
             <VictoryAxis
               dependentAxis
               label="Active / Potential Nodes"
-              domain={[0, 2000]}
-              tickValues={[0, 500, 1000, 1500, 2000]}
+              domain={[0, 2500]}
+              tickValues={[0, 500, 1000, 1500, 2000, 2500]}
               style={{
                 axis: { stroke: "transparent" },
                 axisLabel: { fontSize: 12, padding: 36 },
