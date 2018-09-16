@@ -25,7 +25,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="mw8 center">
+        <div className="mw7 center">
           <VictoryChart>
             <VictoryLine
               style={{
@@ -73,7 +73,7 @@ class App extends Component {
           </VictoryChart>
         </div>
 
-        <div className="mw8 center">
+        <div className="mw7 center">
           <VictoryChart minDomain={{ x: parse("18-Apr-17") }}>
             <VictoryLine
               style={{
