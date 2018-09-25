@@ -2,7 +2,7 @@ const fs = require("fs");
 
 var data = "{\n";
 readFiles(
-	"./potential/",
+	"./active/",
 	function(filename, content) {
 		try {
 			const date = filename.split(".")[1];

@@ -2,10 +2,10 @@
 # from https://stackoverflow.com/a/41834486
 
 # we'll write all git versions of the file to this folder:
-EXPORT_TO=../nycmesh-stats/potential
+EXPORT_TO=$1
 
 # take relative path to the file to inspect
-GIT_PATH_TO_FILE=$1
+GIT_PATH_TO_FILE=$2
 
 # ---------------- don't edit below this line --------------
 

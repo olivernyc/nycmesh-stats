@@ -49,13 +49,13 @@ class App extends Component {
             <VictoryAxis
               crossAxis
               label="Active Nodes"
-              domain={[parse("14-Oct-14"), parse("16-Sep-18")]}
+              domain={[parse("14-Oct-14"), parse("24-Sep-18")]}
               tickValues={[
                 parse("14-Oct-14"),
                 parse("18-Nov-16"),
                 parse("18-Jun-17"),
                 parse("18-May-18"),
-                parse("15-Sep-18")
+                parse("24-Sep-18")
               ]}
               tickFormat={x => {
                 const date = format(parse(x), "MMM 'YY");
@@ -112,7 +112,7 @@ class App extends Component {
                 parse("1-Jan-18"),
                 parse("1-Apr-18"),
                 parse("1-Jul-18"),
-                parse("15-Sep-18")
+                parse("24-Sep-18")
                 // parse("18-Jun-17"),
                 // parse("18-May-18")
               ]}
